@@ -1,0 +1,10 @@
+Passo #1: Garantir que o ambiente de trabalho + repositório do projeto (gitlab) está no windows
+Passo #2: Entrar no ambiente de trabalho (docker compose up) e entrar no Jupiter
+PS: O ficheiro aviacao.sql tem que estar dentro da pasta data para funcionar
+Passo #3: Abrir um novo terminal no jupiter
+Passo #4: Ligar ao postgreSQL usando: psql -h postgres -U postgres  COM a pass: postgres
+Passo #5: CREATE USER aviacao  WITH PASSWORD 'aviacao';
+Passo #6: CREATE DATABASE aviacao  WITH OWNER = aviacao ENCODING = 'UTF8';
+Passo #7: GRANT ALL ON DATABASE aviacao TO aviacao;
+Passo #8: Para verificar se correu tudo bem fazer \q e depois \i ~/data/aviacao.sql
+
